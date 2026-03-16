@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <>
-    <section>
+    <section className="border w-full h-screen bg-orange-300">
         Salut
     </section>
     </>
