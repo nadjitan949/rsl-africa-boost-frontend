@@ -1,5 +1,7 @@
 import Button from "@/app/_ui/Button"
 import Link from "next/link"
+import Logo from "@/app/assets/logo.png"
+import CustomImage from "@/app/_ui/Image"
 
 function Header() {
 
@@ -13,9 +15,15 @@ function Header() {
 
     return (
         <>
-            <header className="w-full flex items-center justify-around bg-black/50">
-                <div className="w-70 h-20 border">
-                    Logo
+            <header className="w-full flex items-center justify-around py-5">
+                <div className=" flex gap-2 items-end">
+                    <div className="w-15 h-15 rounded-md">
+                        <CustomImage src={Logo} alt="Logo" />
+                    </div>
+                    <div className="flex flex-col">
+                        <span className=" font-medium text-white">RSL Africa Boost</span>
+                        <span className="text-white text-[10px]">Edition septembre 2026</span>
+                    </div>
                 </div>
                 <nav>
                     <ul className="flex gap-7 py-3 px-8 border border-white/50 rounded-full bg-white/30">
